@@ -52,43 +52,30 @@ This repository contains the following key files:
 
 3. Online Advertising Performance Analysis.pptx: A PowerPoint presentation of the key insights, designed for business stakeholders.
 ----
-How to Use
+# How to Use
 Follow these steps to run the analysis locally.
 
 1) Clone the repository
-bash
 git clone https://github.com/RiyazShaik27/Online-Advertising-Performance-Analysis
 cd Online-Advertising-Performance-Analysis
 2) Create and activate a virtual environment
 macOS/Linux:
-
-bash
 python3 -m venv .venv
 source .venv/bin/activate
 Windows (PowerShell):
-
-powershell
 py -m venv .venv
 .venv\Scripts\Activate.ps1
 3) Install dependencies
 If requirements.txt is not yet available, install the essentials:
-
-bash
 python -m pip install --upgrade pip
 python -m pip install pandas numpy matplotlib seaborn jupyter
 When requirements.txt is added:
-
-bash
 python -m pip install -r requirements.txt
 4) Launch the notebook
-bash
-jupyter notebook
 Open “Advertising Analysis Notebook.ipynb” in the browser and run cells in order.
 
 Troubleshooting
 If plots don’t render, ensure matplotlib is installed and add:
-
-python
 import matplotlib.pyplot as plt
 plt.show()
 If packages install to the wrong interpreter, run installs with python -m pip from the active environment
